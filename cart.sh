@@ -12,7 +12,7 @@ yum install nodejs -y &>>${LOG}
 condition_check
 
 print_head "adding user"
-useradd roboshop
+#useradd roboshop
 condition_check
 
 print_head " making directory"
@@ -56,5 +56,5 @@ systemctl start cart &>>${LOG}
 condition_check
 
 print_head " restarting the cart"
-systemctl restart user
+systemctl restart cart
 condition_check

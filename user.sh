@@ -10,7 +10,7 @@ yum install nodejs -y
 condition_check
 
 print_head "adding the user"
-useradd roboshop
+#useradd roboshop
 condition_check
 
 print_head "making the directory"
@@ -38,7 +38,7 @@ npm install
 condition_check
 
 print_head "copying the files to etc"
-cp ${set_patch}/files/user.service /etc/systemd/system/user.service
+cp ${set_path}/files/user.service /etc/systemd/system/user.service
 condition_check
 
 print_head "reloading the daemon"
@@ -64,3 +64,5 @@ condition_check
 print_head "hosting the ip mongoserver"
 mongo --host 172.31.87.242 </app/schema/user.js
 condition_check
+
+systemctl restart
