@@ -52,7 +52,7 @@ systemctl enable cart &>>${LOG}
 condition_check
 
 print_head "starting cart"
-systemctl start cart&>>${LOG}
+systemctl start cart &>>${LOG}
 condition_check
 
 print_head " restarting the cart"
