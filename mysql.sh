@@ -6,7 +6,7 @@ dnf module disable mysql -y
 condition_check
 
 print_head "copying the files to etc"
-cp ${set_location}/files/mysql.repo /etc/yum.repos.d/mysql.repo
+cp ${set_path}/files/mysql.repo /etc/yum.repos.d/mysql.repo
 condition_check
 
 print_head "installing the my sql community"
@@ -23,4 +23,8 @@ condition_check
 
 print_head "setting the password"
 mysql_secure_installation --set-root-pass RoboShop@1
+condition_check
+
+print_head "restarting the mysqld"
+systemctl restart mysqld
 condition_check
