@@ -16,7 +16,7 @@ case $age in
 esac 
 
 if  [ "${age}" -eq "20" ]; then
-     echo "you are prefect"
+     echo "you are too young"
 elif [ "${age}" -eq "25" ]; then
      echo "you are  prefect" 
 elif [ "${age}" -eq "30" ]; then
