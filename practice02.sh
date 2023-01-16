@@ -15,11 +15,11 @@ case $age in
   ;;
 esac 
 
-if [ "${age}" -eq "20"]; then
-   echo "you are prefect"
+if  [ "${age}" -eq "20"]; then
+     echo "you are prefect"
 elif [ "${age}" -eq "25" ]; then
      echo "you are  prefect" 
-elif [ "${age}" -eq "30" ]
+elif [ "${age}" -eq "30" ]; then
      echo "you are too old"
 else 
   echo "enter 20 , 25 , 30 only"
