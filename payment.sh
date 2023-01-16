@@ -32,3 +32,23 @@ condition_check
 print_head "pip3.6 install"
 pip3.6 install -r requirements.txt
 condition_check 
+
+print_head "cp files to etc"
+cp ${set_path}/files/payment.service /etc/systemd/system/payment.service
+condition_check
+
+print_head "daemon reload"
+systemctl daemon-reload
+condition_check
+
+print_head "enabling the payment"
+systemctl enable payment 
+condition_check
+
+print_head "starting the payment"
+systemctl start payment
+condition_check 
+
+print_head "restarting the payment"
+systemctl start payment 
+condition_check
