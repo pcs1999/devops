@@ -1,1 +1,1 @@
-echo -e "chandra"/t "shekar" /n "pendem"
+echo -e "chandra" /t "shekar" /n "pendem"
