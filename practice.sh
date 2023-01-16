@@ -1,0 +1,1 @@
+echo -e "chandra"/t "shekar" /n "pendem"
