@@ -12,6 +12,6 @@ case $age in
   *) 
   echo "enter 20 , 25 , 30 only"
   ;;
-fi 
+esac 
 
   
