@@ -22,7 +22,7 @@ elif [ "${age}" -eq "25" ]; then
 elif [ "${age}" -eq "30" ]; then
      echo "you are too old"
 else 
-  echo "enter 20 , 25 , 30 only"
+     echo "enter 20 , 25 , 30 only"
 fi 
   
   
