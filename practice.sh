@@ -1,1 +1,1 @@
-echo -e "chandra/tshekar/npendem"
+echo -e "chandra\tshekar\npendem"
