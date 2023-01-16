@@ -26,10 +26,7 @@ systemctl start rabbitmq-server
 condition_check 
 
 print_head "adding user with password"
-rabbitmqctl list_users | grep roboshop 
-if [$? -ne 0]; then
-  rabbitmqctl add_user roboshop roboshop123
-fi 
+rabbitmqctl add_user roboshop roboshop123
 condition_check 
 
 print_head "setting the roboshop as admin"
