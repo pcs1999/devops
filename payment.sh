@@ -23,7 +23,7 @@ cd /app &>>${LOG}
 condition_check 
 
 print_head " unzipping"
-unzip /tmp/payment.zip &>>${LOG}
+unzip /tmp/payment.zip 
 condition_check 
 
 print_head "cd app"
@@ -31,11 +31,11 @@ cd /app  &>>${LOG}
 condition_check 
 
 print_head "pip3.6 install"
-pip3.6 install -r requirements.txt &>>${LOG}
+pip3.6 install -r requirements.txt 
 condition_check 
 
 print_head "cp files to etc"
-cp ${set_path}/files/payment.service /etc/systemd/system/payment.service &>>${LOG}
+cp ${set_path}/files/payment.service /etc/systemd/system/payment.service 
 condition_check
 
 print_head "daemon reload" 
